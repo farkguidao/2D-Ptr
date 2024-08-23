@@ -27,6 +27,8 @@ python eval.py data/hcvrp/hcvrp_v5_60_seed24610.pkl --model outputs/hcvrp_v5_60 
 
 Since AAMAS limits the submission file size within 25Mb, we can only provide the pre-trained model on V5-U60 to avoid exceeding the limit.
 
+**PS: All pre-trained models have been uploaded!**
+
 ## Usage
 
 ### Generating data
