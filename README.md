@@ -1,3 +1,5 @@
+
+
 # 2D-Ptr
 Source code for paper "2D-Ptr: 2D Array Pointer Network for Solving the Heterogeneous Capacitated Vehicle Routing Problem"
 
@@ -53,7 +55,7 @@ python run.py --graph_size 40 --veh_num 3 --baseline rollout --run_name hcvrp_v3
 ```
 
 - `--run_name` will be automatically appended with a timestamp, as the unique subpath for logs and checkpoints.
-- The log based on Tensorboard will be stored in `./log/`, and the checkpoint (or the well-trained model) will be stored in `./outputs/`
+- The log based on Tensorboard will be stored in `./logs/`, and the checkpoint (or the well-trained model) will be stored in `./outputs/`
 - `--obj` represents the objective function, supporting `min-max` and `min-sum`
 
 By default, training will happen on all available GPUs.   Change the code in `./run.py` to only use specific GPUs:
@@ -82,8 +84,3 @@ python eval.py data/hcvrp/hcvrp_v3_40_seed24610.pkl --model outputs/hcvrp_v3_40 
 - The `$filename$.pkl` represents the test set. 
 - The `--width` represents sampling number, which is only available when `--decode_strategy` is `sample`.
 - The `--eval_batch_size` is set to 1 for serial evaluation.
-
-
-
-
-
